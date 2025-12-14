@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="style.css" rel="stylesheet">
+    <link href="colors.css" rel="stylesheet">
+  </head>
+  <body class="roboto-mono">
+    <header>
+      <div>
+        <img
+            src="menu.svg"
+            alt="menu" />
+        <span>Article.org</span>
+        <div>3: 0</div>
+      </div>
+    <hr>
+    </header>
+    <article>
+      <header>
+        <h1>Evolution of Emacs Lisp</h1>
+        <p class="byline">STEFAN MONNIER, Université de Montréal, Canada - MICHAEL SPERBER, Active Group GmbH, German Shepherd: Brent Hailpern, IBM Research, USA</p>
+      </header>
+      <section class="col-2">
+        While Emacs proponents largely agree that it is the world's greatest text editor, it is almost as much a Lisp machine disguised as an editor. Indeed, on of its chief appeals is that it is programmable via its own programming language. Emacs Lisp is a Lisp in the classic tradition. In this article, we present the history of this language over its more than 30 years of evolution. Its core has remained remarkably stable since its inception in 1985, in large part to preserve compatibility with the many third-party packages providing a multitude of extension. Still, Emacs Lisp has evolved and continues to do so. Important aspects of Emacs Lisp have been shaped by concrete requirements of the editor it supports as well as implementation constraints. These requirements led to the choice of a Lisp dialect as Emacs's language in the first place, specifically its simplicity and dynamic nature: Loading additional Emacs packages or changing the ones in place occurs frequently, and having to restart the editor in order to re-compile or re-link the code would be unacceptable. Fulfilling this requirement in a more static language would have been difficult at best. One of Lisp's chief characteristics is its malleability through its uniform syntax and the use of macros.
+        This has allowed the language to evolve much more rapidly and substantively than the evolution of its core would suggest, by letting Emacs packages provide new surface syntax alongside new functions. In particular, Emacs Lisp can be customized to look wich like Common Lisp, and additional packages provide multiple-dispatch object systems, legible regular expressions, programmable pattern-matching constructs, generalized variables, and more. Still, the core has also evolved, albeit slowly. Most notable, it acquired support for lexical scoping. The timeline of Emacs Lisp development is closely tied to the projects and people who have shaped it over the years: We document Emacs Lisp history through its predecessors, Mocklisp and MacLisp, its early development up to the "Emacs schism" and the fork of Lucid Emacs, the development of XEmacs, and the subsequent renaissance of Emacs development.
+        <footer>
+          <p>CCS Concepts: • <b>Social and professional topics →</b></p>
+          <p>History of programming languages.</p>
+          <p>Additional Key Words and Phrases:</p>
+          <p>History of programming languages, Lisp, Emacs Lisp</p>
+        </footer>
+      </section>
+      <section>
+        <p><b>ACM Reference Format:</b></p>
+        <p>Stefan Monnier and Michael Sperber. 2020. Evolution of Emacs Lisp.Proc. ACM Program. Lang.4, HOPL, Article 74 (June 2020), 55 pages. <a href="https://doi.org/10.1145/3386324">https://doi.org/10.1145/3386324</a></p>
+      </section>
+      <hr>
+      <section>
+        Authors' addresses: Stefan Monnier, Université de Montréal, C.P. 6128, succ. centre-ville, Montréal, QC, H3C 3J7, Canada, monnier@iro.umontreal.ca; Michael Sperber, Active Group GmbH, Hechinger Str. 12/1, Tübingen, Germany, sperber@deinprogramm.de
+      </section>
+      <hr>
+      <footer>
+        <section>
+        <p>Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for third-party components of this work must be honored. For all other uses, contact the owner/author (s).</p>
+        <p>©2020 Copyright held by the owner/author(s).2475-1421/2020/6-ART74 <a href="https://doi.org/10.1145/3386324">https://doi.org/10.1145/3386324</a></p>
+        </section>
+      </footer>
+    </article>
+    <footer>
+      Proc. ACM Program. Lang., Vol. 4, No. HOPL, Article 74. Publication date: June 2020.
+      <hr>
+    </footer>
+  </body>
+</html>

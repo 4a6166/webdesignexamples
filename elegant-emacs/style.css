@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  --pad-h : 2rem;
+  --pad-para: 3ch;
+  font-size: 12pt;
+}
+
+body {
+  width: 100%;
+  max-width: 120ch;
+  line-height: 1.6;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  padding: var(--pad-h);
+  font-size: 0.9rem;
+  margin: 0 auto;
+  background-color: var(--color-background);
+  box-sizing: border-box;
+}
+
+
+body>header {
+  font-size: 1.1rem;
+  font-weight: 300;
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+  padding-top: calc(var(--pad-para)/2);
+  background-color: var(--color-background);
+
+  -webkit-box-shadow: 0px 14px 20px -4px rgba(240,240,230,0.69);
+  box-shadow: 0px 14px 20px -4px rgba(240,240,230,0.69);
+}
+
+body>header div{
+  display: flex;
+  gap: 0.5rem;
+}
+
+body>header img {
+  width: 1rem;
+}
+
+body>header span {
+  flex-grow: 3;
+}
+
+body>header>div>div {
+  color: var(--color-text-muted)
+}
+
+b {
+  font-weight: 450;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: unset;
+}
+
+section {
+  margin-top: var(--pad-para);
+  margin-bottom: var(--pad-para);
+}
+
+article {
+  font-weight: 300;
+  text-align: justify;
+}
+
+article>header {
+  padding-bottom: var(--pad-para);
+}
+
+article>header>h1{
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+article>header>h1:first-letter {
+  text-decoration: underline;
+  text-decoration-thickness: .15rem;
+}
+
+article>header>p {
+  margin: 0;
+}
+
+.col-2 {
+  column-count: 2;
+  gap: var(--pad-h)
+}
+
+.col-2 footer {
+  padding-top: var(--pad-para);
+}
+
+.col-2 footer p {
+  padding: 0;
+  margin: 0;
+}
+
+body>footer {
+  color: var(--color-text-muted);
+  text-align: right;
+  margin-top: calc(var(--pad-para)*4);
+}
+
+@media screen and (max-width: 840px) {
+  html {
+    font-size: 14pt;
+  }
+
+  body {
+    padding-left: calc(var(--pad-h)*2);
+    padding-right: calc(var(--pad-h)*2);
+    padding-bottom: 15vh;
+
+  }
+
+  .col-2 {
+    column-count: 1;
+    line-height: 2;
+  }
+
+}
